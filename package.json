@@ -1,0 +1,52 @@
+{
+  "name": "c4-presenter",
+  "version": "1.0.0",
+  "description": "C4 Presenter for topo",
+  "main": "./lib/index.js",
+  "bin": {
+    "topo-file-collector": "./lib/index.js"
+  },
+  "scripts": {
+    "start-watch": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
+    "start": "ts-node src/index.ts",
+    "create": "npm run build && npm run test",
+    "build": "tsc -p .",
+    "test": "yarn jest src/",
+    "refresh": "rm -rf ./node_modules ./package-lock.json && npm install",
+    "prettier": "prettier --single-quote --trailing-comma es5 --write 'src/**/*.{ts,js,graphql}?(x)'",
+    "prettier-fix": "yarn prettier --fix",
+    "lint": "yarn tslint -c tslint.json 'src/**/*.{ts,js}?(x)'",
+    "lint-fix": "yarn run lint --fix",
+    "copyright": "copyright-header --copyrightHolder \"Thoughtworks Inc. All rights reserved\" --templateId \"apache\"",
+    "copyright-fix": "yarn run copyright --fix",
+    "package": "yarn build && pkg lib/index.js --targets node10-linux-x64,node10-macos-x64,node10-win-x64 -o packaged/c4-presenter"
+  },
+  "repository": "git@github.com:architecture-topography/c4-presenter.git",
+  "dependencies": {
+    "@types/node": "^14.0.11",
+    "commander": "^5.1.0",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.5",
+    "cross-fetch": "3.0.4",
+    "js-logger": "^1.6.0",
+    "chalk": "^4.0.0"
+  },
+  "devDependencies": {
+    "@semantic-release/commit-analyzer": "^8.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/github": "^7.0.7",
+    "@semantic-release/release-notes-generator": "^9.0.1",
+    "@types/jest": "^25.2.3",
+    "@types/mocha": "^7.0.2",
+    "copyright-header": "^0.4.4",
+    "jest": "^26.0.1",
+    "jest-mock-process": "^1.4.0",
+    "last-release-git": "^0.0.3",
+    "pkg": "^4.3.7",
+    "semantic-release": "^17.0.8",
+    "ts-jest": "^26.1.0",
+    "tslint": "^6.1.2",
+    "tslint-config-prettier": "^1.18.0",
+    "prettier": "^2.0.5"
+  }
+}

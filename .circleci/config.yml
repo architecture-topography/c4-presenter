@@ -1,0 +1,43 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:12.16.3
+    steps:
+      - checkout
+      - run:
+          name: "Install requirements"
+          command: |
+            yarn install
+      - run:
+          name: "Run Unit Tests"
+          command: |
+            yarn test
+
+  release:
+    docker:
+      - image: circleci/node:12.16.3
+    steps:
+      - checkout
+      - run:
+          name: "Install requirements"
+          command: |
+            yarn install
+      - run:
+          name: "Package into binaries"
+          command: |
+            yarn package
+      - run:
+          name: "Semantic release"
+          command: |
+            npx semantic-release
+
+
+workflows:
+  version: 2
+  build_and_release:
+      jobs:
+        - build
+        - release:
+            requires:
+              - build
