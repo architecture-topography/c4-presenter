@@ -26,4 +26,9 @@ describe('cli', () => {
     mockStdout = mockProcessStdout();
   });
 
+  describe('when scenario', () => {
+    it('it should do something', () => {
+    });
+  });
+
 });
