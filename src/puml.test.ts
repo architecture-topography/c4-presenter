@@ -1,21 +1,17 @@
+import fs from 'fs';
 import Puml from './puml';
-import PumlWriter from './pumlWriter';
 
-describe('Json validation', () => {
+describe('Puml', () => {
   let puml: Puml;
 
   it('should print just the headers for an empty json input', async () => {
     const json = {};
     puml = new Puml(json);
 
-    const MockedPumlWriter = <jest.Mock<PumlWriter>>PumlWriter;
-    const mockedPumlWriter = <jest.Mocked<PumlWriter>>new MockedPumlWriter();
-    mockedPumlWriter.write = jest.fn();
-
-    puml.print(mockedPumlWriter);
+    puml.print('/tmp/output');
     
-    // assert
-    expect(mockedPumlWriter.write).toHaveBeenCalledWith('foo');
+    let output = await fs.promises.readFile('/tmp/output', { encoding: 'utf-8' });
+    expect(output.startsWith('@startuml'));
     
   });
 });
