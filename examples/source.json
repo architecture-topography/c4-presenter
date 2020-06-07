@@ -1,0 +1,384 @@
+{
+    "data": {
+      "boxes": [
+        {
+          "id": "data-and-analytics",
+          "name": "Data and Analytics",
+          "type": "Domain",
+          "boxes": []
+        },
+        {
+          "id": "experience",
+          "name": "Experience",
+          "type": "Domain",
+          "boxes": [
+            {
+              "id": "digital",
+              "name": "Digital",
+              "type": "Subdomain",
+              "boxes": [
+                {
+                  "id": "channel-services",
+                  "name": "Channel Services",
+                  "type": "Capability"
+                },
+                {
+                  "id": "content-management",
+                  "name": "Content Management",
+                  "type": "Capability"
+                },
+                {
+                  "id": "customer-self-service",
+                  "name": "Customer Self-Service",
+                  "type": "Capability"
+                },
+                {
+                  "id": "digital-asset-management",
+                  "name": "Digital Asset Management",
+                  "type": "Capability"
+                },
+                {
+                  "id": "experience-optimisation",
+                  "name": "Experience Optimisation",
+                  "type": "Capability"
+                }
+              ]
+            },
+            {
+              "id": "contact-centre",
+              "name": "Customer Contact Centre",
+              "type": "Subdomain",
+              "boxes": [
+                {
+                  "id": "webchat",
+                  "name": "Web Chat",
+                  "type": "Capability"
+                },
+                {
+                  "id": "contact-centre-crm",
+                  "name": "CRM",
+                  "type": "Capability"
+                },
+                {
+                  "id": "telephony",
+                  "name": "Telephony",
+                  "type": "Capability"
+                },
+                {
+                  "id": "knowledge-management",
+                  "name": "Knowledge Management",
+                  "type": "Capability"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "corporate",
+          "name": "Corporate Support",
+          "type": "Domain",
+          "boxes": [
+            {
+              "id": "finance",
+              "name": "Finance",
+              "type": "Subdomain",
+              "boxes": [
+                {
+                  "id": "financial-accounting",
+                  "name": "Financial Accounting",
+                  "type": "Capability"
+                },
+                {
+                  "id": "procurement",
+                  "name": "Procurement",
+                  "type": "Capability"
+                },
+                {
+                  "id": "banking",
+                  "name": "Banking",
+                  "type": "Capability"
+                },
+                {
+                  "id": "capital-management",
+                  "name": "Capital Management",
+                  "type": "Capability"
+                },
+                {
+                  "id": "payroll",
+                  "name": "Payroll",
+                  "type": "Capability"
+                },
+                {
+                  "id": "payments",
+                  "name": "Payments",
+                  "type": "Capability"
+                },
+                {
+                  "id": "receipting",
+                  "name": "Receipting",
+                  "type": "Capability"
+                },
+                {
+                  "id": "budgeting-and-forecasting",
+                  "name": "Budgeting and Forecasting",
+                  "type": "Capability"
+                }
+              ]
+            },
+            {
+              "id": "workforce",
+              "name": "Workforce",
+              "type": "Subdomain",
+              "boxes": [
+                {
+                  "id": "learning-and-development",
+                  "name": "Learning and Development",
+                  "type": "Capability"
+                },
+                {
+                  "id": "recruitment",
+                  "name": "Recruitment",
+                  "type": "Capability"
+                },
+                {
+                  "id": "performance-management",
+                  "name": "Performance Management",
+                  "type": "Capability"
+                }
+              ]
+            },
+            {
+              "id": "legal-and-risk",
+              "name": "Legal and Risk",
+              "type": "Subdomain",
+              "boxes": [
+                {
+                  "id": "contract-review",
+                  "name": "Contract Review",
+                  "type": "Capability"
+                },
+                {
+                  "id": "risk-reporting",
+                  "name": "Risk Reporting",
+                  "type": "Capability"
+                },
+                {
+                  "id": "fraud",
+                  "name": "Fraud",
+                  "type": "Capability"
+                },
+                {
+                  "id": "risk-advisory",
+                  "name": "Risk Advisory",
+                  "type": "Capability"
+                }
+              ]
+            },
+            {
+              "id": "workspace",
+              "name": "Digital Workspace",
+              "type": "Subdomain",
+              "boxes": [
+                {
+                  "id": "collaboration",
+                  "name": "Collaboration",
+                  "type": "Capability"
+                },
+                {
+                  "id": "productivity",
+                  "name": "Office Productivity",
+                  "type": "Capability"
+                }
+              ]
+            },
+            {
+              "id": "facilities",
+              "name": "Facilities",
+              "type": "Subdomain",
+              "boxes": []
+            }
+          ]
+        },
+        {
+          "id": "distribution",
+          "name": "Distribution",
+          "type": "Domain",
+          "boxes": [
+            {
+              "id": "pricing-and-underwriting",
+              "name": "Pricing and Underwriting",
+              "type": "Subdomain",
+              "boxes": [
+                {
+                  "id": "credit-risk",
+                  "name": "Credit Risk Management",
+                  "type": "Capability"
+                },
+                {
+                  "id": "pricing",
+                  "name": "Pricing",
+                  "type": "Capability"
+                },
+                {
+                  "id": "underwriting",
+                  "name": "Underwriting",
+                  "type": "Capability"
+                }
+              ]
+            },
+            {
+              "id": "policy",
+              "name": "Policy",
+              "type": "Subdomain",
+              "boxes": [
+                {
+                  "id": "policy-origination",
+                  "name": "Origination",
+                  "type": "Capability"
+                },
+                {
+                  "id": "renewals",
+                  "name": "Renewals",
+                  "type": "Capability"
+                }
+              ]
+            },
+            {
+              "id": "insurance-accounting",
+              "name": "Insurance Accounting",
+              "type": "Subdomain",
+              "boxes": [
+                {
+                  "id": "reinsurance",
+                  "name": "Reinsurance",
+                  "type": "Capability"
+                },
+                {
+                  "id": "insurance-billing",
+                  "name": "Insurance Billing",
+                  "type": "Capability"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "marketing-and-loyalty",
+          "name": "Marketing and Loyalty",
+          "type": "Domain",
+          "boxes": [
+            {
+              "id": "brand-and-loyalty",
+              "name": "Brand and Loyalty",
+              "type": "Subdomain",
+              "boxes": [
+                {
+                  "id": "competitor-analysis",
+                  "name": "Competitor Analysis",
+                  "type": "Capability"
+                },
+                {
+                  "id": "market-research",
+                  "name": "Market Research",
+                  "type": "Capability"
+                },
+                {
+                  "id": "event-management",
+                  "name": "Event Management",
+                  "type": "Capability"
+                },
+                {
+                  "id": "advertising",
+                  "name": "Advertising",
+                  "type": "Capability"
+                }
+              ]
+            },
+            {
+              "id": "marketing",
+              "name": "Marketing",
+              "type": "Subdomain",
+              "boxes": [
+                {
+                  "id": "marketing-reporting",
+                  "name": "Reporting",
+                  "type": "Capability"
+                },
+                {
+                  "id": "segmentation",
+                  "name": "Segmentation",
+                  "type": "Capability"
+                },
+                {
+                  "id": "content-strategy",
+                  "name": "Content Strategy",
+                  "type": "Capability"
+                },
+                {
+                  "id": "marketing-automation",
+                  "name": "Marketing Automation",
+                  "type": "Capability"
+                },
+                {
+                  "id": "analytics",
+                  "name": "Analytics",
+                  "type": "Capability"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "insurance-claims",
+          "name": "Insurance Claims",
+          "type": "Domain",
+          "boxes": [
+            {
+              "id": "claims-admin",
+              "name": "Claims Administration",
+              "type": "Subdomain",
+              "boxes": [
+                {
+                  "id": "claims-tracking",
+                  "name": "Claims Tracking",
+                  "type": "Capability"
+                },
+                {
+                  "id": "claims-lodgement",
+                  "name": "Claims Lodgement",
+                  "type": "Capability"
+                },
+                {
+                  "id": "claims-management",
+                  "name": "Claims Management",
+                  "type": "Capability"
+                }
+              ]
+            },
+            {
+              "id": "claims-fulfillment",
+              "name": "Claims Fulfillment",
+              "type": "Subdomain",
+              "boxes": [
+                {
+                  "id": "claims-supply-chain-management",
+                  "name": "Claims Supply Chain Management",
+                  "type": "Capability"
+                },
+                {
+                  "id": "goods-and-services-fulfillment",
+                  "name": "Goods and Services Fulfillment",
+                  "type": "Capability"
+                },
+                {
+                  "id": "claims-payments",
+                  "name": "Claims Payments",
+                  "type": "Capability"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
