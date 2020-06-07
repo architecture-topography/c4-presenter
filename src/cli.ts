@@ -17,6 +17,7 @@
 import chalk from 'chalk';
 import commander from 'commander';
 import Logger, {createLogger} from './logger';
+import Puml from './puml'
 
 const logger = createLogger('cli');
 logger.setLevel(Logger.INFO);
@@ -28,7 +29,7 @@ const cli = (args: any = process.argv) => {
     .parse(process.argv);
 
   try {
-    logger.info('Do something');
+    new Puml({}).print('file.puml');
   } catch (error) {
     errorMessage(error);
   }
