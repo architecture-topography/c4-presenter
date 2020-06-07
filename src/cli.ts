@@ -16,7 +16,6 @@
 
 import chalk from 'chalk';
 import commander from 'commander';
-import fs from 'fs';
 import Logger, {createLogger} from './logger';
 
 const logger = createLogger('cli');
@@ -25,11 +24,8 @@ logger.setLevel(Logger.INFO);
 const cli = (args: any = process.argv) => {
   logger.info(chalk.yellow('TOPO C4 Presenter'));
   commander
-    .description('Please select one of the following actions: ')
     .option('--host <host>', 'Set host')
     .parse(process.argv);
-
-  let jsonObject;
 
   try {
     logger.info('Do something');
