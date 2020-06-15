@@ -27,7 +27,7 @@
     "commander": "^5.1.0",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.5",
-    "cross-fetch": "3.0.4",
+    "cross-fetch": "3.0.5",
     "js-logger": "^1.6.0",
     "chalk": "^4.1.0"
   },
